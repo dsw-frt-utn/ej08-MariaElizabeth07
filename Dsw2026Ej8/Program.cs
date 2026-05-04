@@ -1,10 +1,15 @@
 ﻿namespace Dsw2026Ej8
 {
+
+    //Alumna:MORALES, María Elizabeth - 56030
     internal class Program
     {
         static void Main(string[] args)
         {
-            
+            Console.WriteLine("           Trabajo Practico Nro 8");
+
+            Console.WriteLine("\n   ********** PROBLEMA 1: **********");
+
             ProductHelper helper = new ProductHelper();
 
             long code = 1001;
@@ -18,6 +23,8 @@
 
             //----
 
+            Console.WriteLine("\n   ********** PROBLEMA 2: **********");
+
             Problema2 p2 = new Problema2();
 
             int quantity = 2;
@@ -29,6 +36,8 @@
 
             //---
 
+            Console.WriteLine("\n   ********** PROBLEMA 3: **********");
+
             Product product = new Product { Description = "Mouse Original" };
             int num = 10;
 
@@ -38,6 +47,9 @@
             Console.WriteLine("\n    Modificar Descripción:");
             Console.WriteLine(cambio);
 
+            //----
+
+            Console.WriteLine("\n   ********** PROBLEMA 4: **********");
 
             Problema4 prom = new Problema4();
 
@@ -46,6 +58,8 @@
             Console.WriteLine($"\n    Promedio de Notas: {promedio:N2}");
 
             //----
+
+            Console.WriteLine("\n   ********** PROBLEMA 5: **********");
 
             Sale ventaMinorista = new RetailSale { Amount = 1000m };
 
@@ -58,6 +72,8 @@
             Console.WriteLine($"    Mayorista (1000 - 10%): {venta.ObtenerImporteFinal(ventaMayorista):C}");
 
             //---
+
+            Console.WriteLine("\n   ********** PROBLEMA 6: **********");
 
             Problema6 p6 = new Problema6();
 
