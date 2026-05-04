@@ -44,7 +44,19 @@
             double promedio = prom.CalcularPromedio(5, null, 7);
 
             Console.WriteLine($"\n    Promedio de Notas: {promedio:N2}");
-            
+
+            //----
+
+            Sale ventaMinorista = new RetailSale { Amount = 1000m };
+
+            Sale ventaMayorista = new WholesaleSale { Amount = 1000m };
+
+            Problema5 venta = new Problema5();
+
+            Console.WriteLine("\n    Importe de Venta:");
+            Console.WriteLine($"    Minorista (1000): {venta.ObtenerImporteFinal(ventaMinorista):C}");
+            Console.WriteLine($"    Mayorista (1000 - 10%): {venta.ObtenerImporteFinal(ventaMayorista):C}");
+
 
 
         }
