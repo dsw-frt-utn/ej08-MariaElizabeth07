@@ -37,6 +37,13 @@
 
             Console.WriteLine("\n    Modificar Descripción:");
             Console.WriteLine(cambio);
+
+
+            Problema4 prom = new Problema4();
+
+            double promedio = prom.CalcularPromedio(5, null, 7);
+
+            Console.WriteLine($"\n    Promedio de Notas: {promedio:N2}");
             
 
 
