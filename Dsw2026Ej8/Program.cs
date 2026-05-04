@@ -57,7 +57,16 @@
             Console.WriteLine($"    Minorista (1000): {venta.ObtenerImporteFinal(ventaMinorista):C}");
             Console.WriteLine($"    Mayorista (1000 - 10%): {venta.ObtenerImporteFinal(ventaMayorista):C}");
 
+            //---
 
+            Problema6 p6 = new Problema6();
+
+            string codigoSucio = " ab 123 x ";
+            string codigoLimpio = p6.NormalizarCodigoProducto(codigoSucio);
+
+            Console.WriteLine("\n    Normalizar Codigo de Producto");
+            Console.WriteLine($"    Original: '{codigoSucio}'");
+            Console.WriteLine($"    Normalizado: {codigoLimpio}");
 
         }
     }
