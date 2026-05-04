@@ -16,14 +16,28 @@
             Console.WriteLine("    Etiqueta:");
             Console.WriteLine(etiqueta);
 
+            //----
+
             Problema2 p2 = new Problema2();
 
             int quantity = 2;
 
-            string resultado = p2.CrearResumenVenta(code, description, quantity, price);
+            string resumen = p2.CrearResumenVenta(code, description, quantity, price);
 
             Console.WriteLine("\n    Resumen de Venta:");
-            Console.WriteLine(resultado);
+            Console.WriteLine(resumen);
+
+            //---
+
+            Product product = new Product { Description = "Mouse Original" };
+            int num = 10;
+
+            Problema3 p3 = new Problema3();
+            string cambio = p3.CompararCopias(num, product);
+
+            Console.WriteLine("\n    Modificar Descripción:");
+            Console.WriteLine(cambio);
+            
 
 
         }
