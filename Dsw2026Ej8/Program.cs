@@ -4,7 +4,18 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            
+            ProductHelper helper = new ProductHelper();
+
+            long code = 1001;
+            string description = "Mouse";
+            decimal price = 6999.99m;
+
+            string etiqueta = helper.ObtenerEtiquetaProducto(code, description, price);
+
+            Console.WriteLine("     Etiqueta:");
+            Console.WriteLine(etiqueta);
+
         }
     }
 }
